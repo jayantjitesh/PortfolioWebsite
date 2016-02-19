@@ -1,3 +1,5 @@
+
+if(Meteor.isClient){
 Router.configure({
   layoutTemplate: 'layout'
 });
@@ -7,3 +9,8 @@ Router.route('/', function () {
 Router.route('/news', function () {
   this.render('news');
 });
+
+Router.route('/projects', function () {
+  this.render('projects');
+});
+}
